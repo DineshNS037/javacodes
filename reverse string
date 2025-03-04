@@ -1,0 +1,12 @@
+public class ReverseString {
+    public static void main(String[] args) {
+        String a = "I      Love   Java Programmig";
+        String[] b = a.trim().split("\\s+");
+        StringBuilder temp = new StringBuilder();
+        for (int i = b.length - 1; i >= 0; i--) {
+            temp.append(b[i]).append(" ");
+        }
+       
+        System.out.println(temp.toString().trim());
+    }
+}
